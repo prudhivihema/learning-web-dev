@@ -2,32 +2,32 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    background-color: #eeeeee;
+    background-color: #CBB9A8;
     padding: 20px;
     height: 200px;
 }
 .box {
-    background-color: #6200ea;
-    color: white;
+    background-color: #145C9E;
+    color: #DCC7BE;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
     
 }
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    color: #333333;
+    background-color: #CBB9A8;
+    font-family: 'Poppins', sans-serif;
+    color: #0B4F6C;
     margin: 0;
     padding: 40px;
     padding-top: 80px;
 }
 h1 {
-    color: #6200ea;
+    color: #0a2e4f;
     font-size: 36px;
 }    
 h2{
-    color: #333333;
+    color: #145C9E;
     margin-top: 30px;
 }
 
@@ -35,14 +35,14 @@ p {
     font-size: 18px;
 }
 a{
-    color: #6200ea;
+    color: #145C9E;
 }
 ul, ol {
     font-size: 16px;
     line-height: 2;
 }
 button {
-    background-color: #6200ea;
+    background-color: #145C9E;
     color: white;
     padding: 10px 20px;
     border:none;
@@ -51,18 +51,18 @@ button {
     cursor:pointer;
 }
 h2 {
-    background-color: #6200ea;
+    background-color: #145C9E;
     color: white;
     padding: 10px;
     margin: 20px 0;
     border-radius: 6px;
 }
 form {
-    background-color: white;
+    background-color: #CBB9A8;
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    border: 1px solid #dddddd;
+    border: 1px solid #145C9E;
 }
 
 input, textarea {
@@ -81,7 +81,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a1a2e;
+    background-color: #145C9E;
     padding: 20px 40px;
     position: fixed;
     top: 0;
@@ -108,7 +108,7 @@ nav {
     font-size: 16px;
 }
 .nav-btn{
-    background-color: #f5c518;
+    background-color: #DCC7BE;
     color: black;
     border: none;
     padding: 10px 24px;
@@ -125,7 +125,7 @@ nav {
     transition: background-color 0.3s;
 }
 .hero {
-    background-color: #1a1a2e;
+    background-color: #145C9E;
     color:white;
     text-align: center;
     padding: 100px 40px;
@@ -140,7 +140,7 @@ nav {
     margin-bottom: 40px;
 }
 .hero-btn{
-    background-color: #f5c518;
+    background-color: #DCC7BE;
     color:black;
     border:none;
     padding: 15px 40px;
