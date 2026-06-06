@@ -42,7 +42,44 @@ skills.forEach(function(skill){
     li.innerText = skill;
     skillsList.appendChild(li);
 })
+// today(6-6-26)
+let person = {
+    name:"Hema",
+    age: 18,
+    skills: ["C++","HTML","CSS","JavaScript"],
+    greet: function(){
+        console.log("Hi I'm "+this.name+" and I'm "+this.age+" years old!");
+    }
+};
+console.log(person.name);
+console.log(person.age);
+console.log(person.skills[0]);
+person.greet();
 
+let btn = document.getElementById("toggleBtn");
+btn.addEventListener("click",function(){
+    console.log("Button was clicked!!");
+})
+btn.addEventListener("mouseover", function(){
+    btn.style.backgroundColor="purple";
+});
+btn.addEventListener("mouseout",function(){
+    btn.style.backgroundColor="";
+})
 
-
+let form = document.getElementById("contactForm");
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+    let name = document.getElementById("nameInput").value;
+    let email = document.getElementById("emailInput").value;
+    let message = document.getElementById("messageInput").value;
+    let formMessage = document.getElementById("formMessage");
+    if(name===""||email===""||message===""){
+        formMessage.innerText = "Please fill in all fields!!";
+        formMessage.style.color="red";
+    }else{
+        formMessage.innerText = "Message sent successfully!!";
+        formMessage.style.color = "green";
+    }
+})
 

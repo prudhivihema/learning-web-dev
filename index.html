@@ -37,19 +37,22 @@
         <h2>A Random Photo</h2>
         <img src="photo.jpg" alt="my photo">
         <h2>Contact me</h2>
-        <form>
+        <form id="contactForm">
             <!-- Text input -->
             <label>Name:</label>
-            <input type="email" placeholder="Enter your email">
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <br><br>
+            <label>Email:</label>
+            <input type="email" id="emailInput" placeholder="Enter your email">
             <br><br>
             <!-- Message box -->
             <label>Message:</label>
             <br>
-            <textarea rows="4" cols="40" placeholder="Write something..."></textarea>
-
+            <textarea id="messageInput" rows="4" cols="40" placeholder="Write something..."></textarea>
             <br><br>
             <!--Submit button-->
             <button type="submit">Send Message</button>
+            <p id="formMessage"></p>
         </form>
         <div class="container">
         <div class="box">Box 1</div>
