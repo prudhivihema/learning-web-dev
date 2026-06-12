@@ -82,4 +82,28 @@ form.addEventListener("submit",function(event){
         formMessage.style.color = "green";
     }
 })
+// (12-6-26)
+let counter = 0;
+let myInterval = setInterval(function(){
+    counter++;
+    console.log("Count: "+counter);
+    if(counter === 5){
+        clearInterval(myInterval);
+        console.log("Stopped!!");
+    }
+},1000);
 
+let startBtn = document.getElementById("startBtn");
+let countdown = document.getElementById("countdown");
+startBtn.addEventListener("click",function(){
+    let timeLeft = 10;
+    countdown.innerText = timeLeft;
+    let timer = setInterval(function(){
+        timeLeft--;
+        countdown.innerText = timeLeft;
+        if(timeLeft===0){
+            clearInterval(timer);
+            countdown.innerText = "Time's up!!";
+        }
+    },1000);
+}); 
